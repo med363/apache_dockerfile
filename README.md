@@ -2,3 +2,4 @@
 ##run it 
 bash `
  docker build -t webserver .`
+ ```run```
