@@ -1,6 +1,8 @@
-FROM ubuntu:updated
-RUN apt-get install -y apache2
-RUN apt-get installl -y apache2-utils
-EXPOSE 80
-ENTRYPOINT ["apache2ctl"]
-CMD ["-DFOREGROUND"]
+FROM ubuntu
+RUN apt update
+RUN apt install –y apache2
+RUN apt install –y apache2-utils
+RUN apt clean
+EXPOSE 80 
+CMD [“apache2ctl”, “-D”, “FOREGROUND”]
+
