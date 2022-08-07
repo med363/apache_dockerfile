@@ -2,4 +2,4 @@
 ##run it 
 bash `
  docker build -t webserver .`
- ```run```
+-p 80:80
