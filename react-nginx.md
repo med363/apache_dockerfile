@@ -1,3 +1,4 @@
+```bash
 FROM node:18 as builder
 
 WORKDIR /app
@@ -21,3 +22,4 @@ COPY --from=builder /app/build /usr/share/nginx/html
 EXPOSE 80
 #start nginx
 CMD ["nginx","-g","daemon off;"]
+```
